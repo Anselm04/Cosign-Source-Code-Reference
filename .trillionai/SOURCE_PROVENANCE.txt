@@ -1,0 +1,6 @@
+Official upstream: https://github.com/sigstore/cosign
+Upstream commit: 6181e75677cc4719e845fa23d0ef8a936e883aa0
+Imported to: Anselm04/Cosign-Source-Code-Reference
+Source licensing: Apache-2.0; preserve original LICENSE, COPYRIGHT.txt and individual notices
+Excluded: upstream GitHub workflows to avoid running vendor CI in the reference archive
+No upstream source, tests or build scripts were executed in this source import.
