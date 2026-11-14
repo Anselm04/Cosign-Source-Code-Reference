@@ -1,9 +1,9 @@
 {
   "upstream": "https://github.com/sigstore/cosign.git",
   "pinned_commit": "6181e75677cc4719e845fa23d0ef8a936e883aa0",
-  "destination_main_sha": "a75e0174445137675555dd3e9e414fcf29cd1ee9",
+  "destination_main_sha": "d435ee7eb1ede07b2f08190a5f794f8e6eb53d1d",
   "upstream_tracked_entries": 490,
-  "destination_tracked_entries": 468,
+  "destination_tracked_entries": 477,
   "missing_paths": [
     ".github/workflows/build.yaml",
     ".github/workflows/codeql-analysis.yml",
@@ -23,23 +23,20 @@
     ".github/workflows/tests.yaml",
     ".github/workflows/validate-release.yml",
     ".github/workflows/verify-docgen.yaml",
-    ".github/workflows/whitespace.yaml",
-    "cmd/conformance/main.go",
-    "pkg/oci/internal/signature/layer.go",
-    "pkg/oci/internal/signature/layer_test.go",
-    "pkg/signature/annotations.go",
-    "pkg/signature/keys.go",
-    "pkg/signature/keys_test.go"
+    ".github/workflows/whitespace.yaml"
   ],
-  "missing_path_count": 25,
+  "missing_path_count": 19,
   "missing_upstream_ci_count": 19,
-  "missing_other_count": 6,
+  "missing_other_count": 0,
   "mismatched_objects": [],
   "mismatched_count": 0,
   "extra_paths": [
     ".github/workflows/audit-source-once.yml",
     ".trillionai/FILE_COUNT.txt",
-    ".trillionai/SOURCE_PROVENANCE.txt"
+    ".trillionai/SOURCE_COMPLETENESS_REPAIR.md",
+    ".trillionai/SOURCE_PROVENANCE.txt",
+    "docs/verified-source-audit/cosign-main-delta.json",
+    "docs/verified-source-audit/cosign-summary.md"
   ],
-  "extra_count": 3
+  "extra_count": 6
 }
