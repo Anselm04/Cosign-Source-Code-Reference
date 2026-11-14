@@ -1,0 +1,31 @@
+name: Import official Sigstore Cosign source once
+on:
+  push:
+    paths:
+      - '.github/workflows/import-cosign-once.yml'
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout destination
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Copy upstream Cosign source without executing upstream code
+        shell: bash
+        run: |
+          set -euo pipefail
+          git clone --depth 1 https://github.com/sigstore/cosign.git /tmp/sigstore-cosign
+          UPSTREAM_SHA="$(git -C /tmp/sigstore-cosign rev-parse HEAD)"
+          mkdir -p .trillionai
+          rsync -a --exclude '.git' --exclude '.github/workflows' /tmp/sigstore-cosign/ ./
+          printf '%s\n' "Official upstream: https://github.com/sigstore/cosign" "Upstream commit: ${UPSTREAM_SHA}" "Imported to: Anselm04/Cosign-Source-Code-Reference" "Source licensing: Apache-2.0; preserve original LICENSE, COPYRIGHT.txt and individual notices" "Excluded: upstream GitHub workflows to avoid running vendor CI in the reference archive" "No upstream source, tests or build scripts were executed in this source import." > .trillionai/SOURCE_PROVENANCE.txt
+          rm -f .github/workflows/import-cosign-once.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m "archive: import genuine Sigstore Cosign source and record upstream revision"
+          git push origin HEAD:main
