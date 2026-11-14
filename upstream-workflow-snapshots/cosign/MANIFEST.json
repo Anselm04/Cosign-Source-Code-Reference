@@ -1,0 +1,122 @@
+{
+  "source": "https://github.com/sigstore/cosign.git",
+  "commit": "6181e75677cc4719e845fa23d0ef8a936e883aa0",
+  "number_of_original_workflow_files": 19,
+  "original_ci_is_disabled": true,
+  "files": [
+    {
+      "upstream_path": ".github/workflows/build.yaml",
+      "reference_path": "upstream-workflow-snapshots/cosign/.github/workflows/build.yaml",
+      "git_blob": "5a5602c352ab752e1c6abe5dcfe40bfb8fe17132",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/codeql-analysis.yml",
+      "reference_path": "upstream-workflow-snapshots/cosign/.github/workflows/codeql-analysis.yml",
+      "git_blob": "c3da6a4c9f59e33674a447d3fe855428f6b242a5",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/conformance-nightly.yml",
+      "reference_path": "upstream-workflow-snapshots/cosign/.github/workflows/conformance-nightly.yml",
+      "git_blob": "d30bd8e23881e5b2c2d83e8af64d12ea64118367",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/conformance.yml",
+      "reference_path": "upstream-workflow-snapshots/cosign/.github/workflows/conformance.yml",
+      "git_blob": "abd44ba8f8643f915638d9f1a1c7580514baf471",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/cosign-test.key",
+      "reference_path": "upstream-workflow-snapshots/cosign/.github/workflows/cosign-test.key",
+      "git_blob": "611e4643187edf30fe9e07a5fe48c4dc49a66a67",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/cosign-test.pub",
+      "reference_path": "upstream-workflow-snapshots/cosign/.github/workflows/cosign-test.pub",
+      "git_blob": "385e6eef5c66db609fae542d945e63134fb5265e",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/cut-release.yml",
+      "reference_path": "upstream-workflow-snapshots/cosign/.github/workflows/cut-release.yml",
+      "git_blob": "57e83b80061ff5a14c8ad153773bddc1b1438fb4",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/depsreview.yml",
+      "reference_path": "upstream-workflow-snapshots/cosign/.github/workflows/depsreview.yml",
+      "git_blob": "e133c695b6279bfae2331f55bd21ebf4718e3197",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/donotsubmit.yaml",
+      "reference_path": "upstream-workflow-snapshots/cosign/.github/workflows/donotsubmit.yaml",
+      "git_blob": "f4644a5e666096191bc4c9995d69bf5a331b9cb2",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/e2e-tests.yml",
+      "reference_path": "upstream-workflow-snapshots/cosign/.github/workflows/e2e-tests.yml",
+      "git_blob": "f9ae855e94dbbfe630ef3f0ab3a2fa742908638c",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/e2e-with-binary.yml",
+      "reference_path": "upstream-workflow-snapshots/cosign/.github/workflows/e2e-with-binary.yml",
+      "git_blob": "1031ae951bf028d0f32a9faae4654bc5833bb71e",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/github-oidc.yaml",
+      "reference_path": "upstream-workflow-snapshots/cosign/.github/workflows/github-oidc.yaml",
+      "git_blob": "f642cb0e502ba4758c567b7f0d1e1b74ef339069",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/golangci-lint.yml",
+      "reference_path": "upstream-workflow-snapshots/cosign/.github/workflows/golangci-lint.yml",
+      "git_blob": "ac919e897bd5ed3529a2d3a7ec31be8942351b1e",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/kind-verify-attestation.yaml",
+      "reference_path": "upstream-workflow-snapshots/cosign/.github/workflows/kind-verify-attestation.yaml",
+      "git_blob": "5acb1a3dae322a1a46706f099a3fd4f1afb943b3",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/scorecard-action.yml",
+      "reference_path": "upstream-workflow-snapshots/cosign/.github/workflows/scorecard-action.yml",
+      "git_blob": "e2bd0b42bfec0915887a81440d2c6a4c2ef44f42",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/tests.yaml",
+      "reference_path": "upstream-workflow-snapshots/cosign/.github/workflows/tests.yaml",
+      "git_blob": "aac866e61d6a723e0f4b66f64d96e744945e58ab",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/validate-release.yml",
+      "reference_path": "upstream-workflow-snapshots/cosign/.github/workflows/validate-release.yml",
+      "git_blob": "33e98c65c0b42e94fbba0afce90be5e9628fbf68",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/verify-docgen.yaml",
+      "reference_path": "upstream-workflow-snapshots/cosign/.github/workflows/verify-docgen.yaml",
+      "git_blob": "765b7058ee16e7a9123c9f5108547a9b8ceda129",
+      "original_mode": "100644"
+    },
+    {
+      "upstream_path": ".github/workflows/whitespace.yaml",
+      "reference_path": "upstream-workflow-snapshots/cosign/.github/workflows/whitespace.yaml",
+      "git_blob": "861835fa73ac6a297b91d7966b62ae1413dee5b3",
+      "original_mode": "100644"
+    }
+  ]
+}
